@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Online Store - Product Listing</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .product-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      article {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+
+      figure {
+        margin: 0;
+        text-align: center;
+      }
+
+      figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+        margin: 10px 0 5px;
+      }
+
+      p.description {
+        font-size: 0.95em;
+        color: #555;
+      }
+
+      p.price {
+        font-weight: bold;
+        color: #222;
+        margin-top: 10px;
+      }
+
+      button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      button:hover:not(:disabled) {
+        background-color: #218838;
+      }
+
+      button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+
+      .sold-out {
+        color: red;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 900px) {
+        .product-row {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Online Store</h1>
+    </header>
+
+    <!-- Row 1: 3 Products -->
+    <section class="product-row">
+      <article>
+        <figure>
+          <img
+            src="https://via.placeholder.com/250x150/ff9999/333333?text=Gadget+One"
+            alt="Gadget One"
+          />
+        </figure>
+        <h2>Gadget One</h2>
+        <p class="description">
+          A powerful and compact gadget for everyday use.
+        </p>
+        <p class="price">$49.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article>
+        <figure>
+          <img
+            src="https://via.placeholder.com/250x150/99ccff/333333?text=Headphones"
+            alt="Wireless Headphones"
+          />
+        </figure>
+        <h2>Wireless Headphones</h2>
+        <p class="description">
+          Experience amazing sound quality without wires.
+        </p>
+        <p class="price">$79.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article>
+        <figure>
+          <img
+            src="https://via.placeholder.com/250x150/cccccc/666666?text=Out+of+Stock"
+            alt="Smart Watch"
+          />
+        </figure>
+        <h2>Smart Watch Pro</h2>
+        <p class="description">Stay connected and healthy on the go.</p>
+        <p class="price">$119.99</p>
+        <button disabled>Add to Cart</button>
+        <span class="sold-out" aria-label="Sold Out">Sold Out</span>
+      </article>
+    </section>
+
+    <!-- Row 2: 2 Products -->
+    <section class="product-row">
+      <article>
+        <figure>
+          <img
+            src="https://via.placeholder.com/250x150/ffcc99/333333?text=Camera+Lens"
+            alt="Camera Lens"
+          />
+        </figure>
+        <h2>HD Camera Lens</h2>
+        <p class="description">
+          Capture sharp and detailed photos in any light.
+        </p>
+        <p class="price">$89.99</p>
+        <button>Add to Cart</button>
+      </article>
+
+      <article>
+        <figure>
+          <img
+            src="https://via.placeholder.com/250x150/99ffcc/333333?text=Fitness+Tracker"
+            alt="Fitness Tracker"
+          />
+        </figure>
+        <h2>Fitness Tracker</h2>
+        <p class="description">
+          Monitor your health and workouts in real time.
+        </p>
+        <p class="price">$59.99</p>
+        <button>Add to Cart</button>
+      </article>
+    </section>
+  </body>
+</html>

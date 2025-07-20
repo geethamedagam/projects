@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sticky Navigation Bar Example</title>
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      /* Sticky Navigation Bar */
+      nav {
+        position: sticky;
+        top: 0;
+        background-color: #333;
+        padding: 1rem;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #f0c040;
+      }
+
+      /* Page Sections */
+      section {
+        padding: 100px 20px;
+        min-height: 100vh;
+      }
+
+      #section1 {
+        background: #f4f4f4;
+      }
+      #section2 {
+        background: #e0f7fa;
+      }
+      #section3 {
+        background: #a7dcc6;
+      }
+      #section4 {
+        background: #ffe0b2;
+      }
+
+      /* Optional: Header */
+      header {
+        padding: 2rem;
+        background: #444;
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Sticky Navbar Page</h1>
+    </header>
+
+    <!-- Sticky Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Contact</a></li>
+        <li><a href="#section4">Report</a></li>
+      </ul>
+    </nav>
+
+    <!-- Scrollable Content -->
+    <section id="section1">
+      <h2>Home Section</h2>
+      <p>hello... Welcome to the Home Section.</p>
+    </section>
+
+    <section id="section2">
+      <h2>About Section</h2>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam.
+      </p>
+    </section>
+
+    <section id="section3">
+      <h2>Contact Section</h2>
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p>
+    </section>
+    <section id="section4">
+      <h2>Report Section</h2>
+      <p></p>
+    </section>
+  </body>
+</html>
